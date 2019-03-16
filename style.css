@@ -1,0 +1,40 @@
+.pagination{
+  margin-left:200px;
+}
+.newRev{
+  margin: 5px;
+  padding: 5px;
+  border:1px solid grey;
+}
+.all{
+  margin: 15px;
+}
+.starswrap{
+  overflow: hidden;
+}
+#starsrewiev {
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+#starsrewiev input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+#starsrewiev input ~ label i{
+  color:#ccc;
+}
+#starsrewiev input:checked ~ label i{
+  color: #ec9801;
+}
+#starsrewiev label {
+  float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+#starsrewiev label:hover i, #starsrewiev label:hover ~ label i{
+  color: #ec9801;
+}
